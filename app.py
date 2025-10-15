@@ -17,7 +17,7 @@ from features.event_setup import event_setup_page
 from features.dashboard import dashboard_page
 from features.predictive import predictive_page
 from features.ai_summaries import ai_summaries_page
-from features.incidents import incidents_dispatch_page
+from features.incidents import incidents_page
 from features.geo_fencing import geo_fencing_page
 from features.lost_found import lost_found_page
 
@@ -38,7 +38,7 @@ def main():
     elif choice == "AI Summaries":
         ai_summaries_page()
     elif choice == "Incidents & Dispatch":
-        incidents_dispatch_page()
+        incidents_page()
     elif choice == "Lost & Found":
         lost_found_page()
     elif choice == "Geo-Fencing Alerts":
