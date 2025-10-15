@@ -18,11 +18,8 @@ from features.dashboard import dashboard_page
 from features.predictive import predictive_page
 from features.ai_summaries import ai_summaries_page
 from features.incidents import incidents_dispatch_page
-from features.vision import vision_page
-
-
- 
-
+from features.geo_fencing import geo_fencing_page
+from features.lost_found import lost_found_page
 
 def main():
     ensure_session()
@@ -42,9 +39,10 @@ def main():
         ai_summaries_page()
     elif choice == "Incidents & Dispatch":
         incidents_dispatch_page()
-    elif choice == "Vision Anomaly Detection":
-        vision_page()
-
+    elif choice == "Lost & Found":
+        lost_found_page()
+    elif choice == "Geo-Fencing Alerts":
+        geo_fencing_page()
 
 if __name__ == "__main__":
     main()
